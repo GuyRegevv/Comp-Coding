@@ -1,8 +1,9 @@
 import sys
+# question A
 
 def Q_A():
+    
     sum = 0
-
 
     userInput = input()
     data = userInput.split(' ')
