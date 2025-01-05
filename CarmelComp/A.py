@@ -4,7 +4,7 @@ import sys
 def Q_A():
     
     sum = 0
-
+    
     userInput = input()
     data = userInput.split(' ')
     n, k = int(data[0]), int(data[1])
@@ -16,9 +16,7 @@ def Q_A():
         length = (r - l) + 1
         sum += length
 
-    if (k > sum):
-        return (sum - k)
-    elif (sum % k) == 0: 
+    if (sum % k) == 0: 
         return 0
     else:
         return k - (sum % k)
